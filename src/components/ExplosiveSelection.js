@@ -168,16 +168,6 @@ const ExplosiveSelection = ({ setStep }) => {
     }
   };
 
-  const handlePreviousStep = () => {
-    if (step === 4) {
-      localSetStep(3);
-    } else if (step === 3) {
-      localSetStep(2);
-    } else if (step === 2) {
-      localSetStep(1);
-    }
-  };
-
   const handleSelectMaterial = (name) => {
     setSelectedMaterial(name);
     tg.MainButton.text = "Далее";
